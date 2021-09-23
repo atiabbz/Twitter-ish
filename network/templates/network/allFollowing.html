@@ -1,0 +1,23 @@
+{% extends 'network/layout.html' %}
+{% load static %}
+
+{% block script %}
+<script src="{% static 'network/scripts.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <p><h2>Following</h2></p>
+
+    <div id="posts-view">
+    </div>
+
+    <div id="pagination">
+        <nav aria-label="Pagination">
+            <ul class="pagination" style="justify-content: center;">
+                <li id="previous" class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                <!-- <li class="page-item active"><a id="page1" class="pageBtn page-link" href="#">1</a></li> -->
+                <li id="next" class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </div>
+{% endblock %}

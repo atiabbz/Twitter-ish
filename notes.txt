@@ -1,0 +1,64 @@
+Design a Twitter-like social network website for making posts and following users.
+
+Likely have to augment User model
+Need additional models to represent details about
+    posts,
+    likes,
+    & followers
+
+Using
+    Python,
+    JavaScript,
+    HTML,
+    & CSS,
+        complete the implementation of a social network
+
+The network must allow users to
+    make posts,
+    follow other users,
+    & 'like' posts
+
+NEW POST
+    Signed in users should be able to write a new text-based post using a form with
+        a text area,
+        & a submit button
+    Form should be placed at the beginning of ALL POSTS page
+
+ALL POSTS
+    Show all posts from all users
+    Most recent posts on top
+    Each post must include
+        poster's username (must be a link to their profile),
+        post's content,
+        posting date and time,
+        & post's number of likes (initially 0)
+
+PROFILE PAGE
+    Clicking on a username should load user's profile page which should:
+        Display
+            the number of followers the user has,
+            the number of people the user follows,
+            all the posts made by the user (rev-chrono)
+        For any **other** signed in user, show
+            a follow/unfollow toggle button
+
+FOLLOWING
+    The 'Following' link from navbar should take to a page with all the posts made by the current user follows.
+    Only available to signed in users
+    (Behaves essentially the same as All Posts link)
+
+PAGINATION
+    Show 10 posts per page
+    If more than 10 posts, show Next button
+    If not on first page, also show Previous button
+    Check HINTS
+
+EDIT POST
+    Users should be able to click an Edit button/link on their own posts
+    Replace content area with textarea filled with content
+    Show save button which onclick should work without reloading the entire page !!JavaScript!!
+    Make sure no one but OP can edit posts
+
+LIKE/UNLIKE
+    Signed in users should be able to click a button/link toggle to like/unlike a post
+    Update a post's like count using JS fetch calls

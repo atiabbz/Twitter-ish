@@ -1,0 +1,14 @@
+{% extends 'network/layout.html' %}
+{% load static %}
+
+{% block script %}
+<script src="{% static 'network/scripts.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+    <ul class="list-group">
+        {% for profile in following %}
+        <li class="list-group-item"><a href="/profile/{{ profile.username }}">{{ profile.username }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

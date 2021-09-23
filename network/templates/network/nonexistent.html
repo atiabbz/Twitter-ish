@@ -1,0 +1,11 @@
+{% extends 'network/layout.html' %}
+{% load static %}
+
+{% block script %}
+<!-- <script src="{% static 'network/scripts.js' %}"></script> -->
+{% endblock %}
+
+{% block body %}
+<p><img src="{% static 'network/nonexistent.png' %}" alt="nonexistent" class="mx-auto d-block" style="width: 25%;"></p>
+<p><h1 class="d-flex justify-content-center font-italic">Nonexistent</h1></p>
+{% endblock %}
